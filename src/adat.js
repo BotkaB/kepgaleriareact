@@ -1,9 +1,5 @@
 export const kepLista = [
-    {
-        url: "kepek/DSC_0051.JPG",
-        cim: "Szittyótér vége",
-        leiras: "Szelidi-tó főterének vége.",
-    },
+ 
     {
         url: "kepek/DSC_0076.JPG",
         cim: "Forgalmi rend változás",

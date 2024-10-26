@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import KisKepek from './components/KisKepek';
+import { kepLista } from './adat';
+import NagyKep from './components/NagyKep';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Képgaléria
       </header>
+      <section>
+        <NagyKep kep={kepLista[0]}/>
+      </section>
+      <section>
+        <KisKepek kepLista={kepLista} />
+      </section>
     </div>
   );
 }
