@@ -1,19 +1,22 @@
 
+import { useContext } from 'react';
 import './App.css';
 import KisKepek from './components/KisKepek';
-import { kepLista } from './adat';
+
 import NagyKep from './components/NagyKep';
+import { KepContext } from './context/KepContext';
 
 
 
 function App() {
+  const {kepLista, index}=useContext(KepContext) 
   return (
     <div className="App">
       <header className="App-header">
         Képgaléria
       </header>
       <section>
-        <NagyKep kep={kepLista[0]}/>
+        <NagyKep kep={kepLista[index]}/>
       </section>
       <section>
         <KisKepek kepLista={kepLista} />
