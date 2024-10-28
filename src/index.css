@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card img {
+  width: 100%; /* A kép szélessége a szülőelem teljes szélességét veszi fel */
+  height: auto; /* A kép magassága automatikusan igazodik a szélesség arányaihoz */
+  object-fit: contain; /* A kép arányainak megtartása */
+}
+
+.card-body {
+  padding: 10px; /* Kisebb margó a kártya tartalmához */
+}
+
+.nagy-kep {
+  display: flex; /* Flexbox elrendezés beállítása */
+  align-items: center; /* Elemek vertikális középre igazítása */
+  justify-content: center; /* Elemek horizontális középre igazítása */
+  gap: 20px; /* Térköz a gombok és a kép között */
+}
+
+.nagy-kep img {
+  max-width: 70%; /* A nagy kép szélessége a szülőelem szélességének 70%-a */
+  height: auto; /* A nagy kép magassága automatikusan igazodik a szélesség arányaihoz */
+  display: block; /* Kép blokk elemmé tétele */
+  margin: 0; /* Kép margójának eltávolítása */
+}
+
+
